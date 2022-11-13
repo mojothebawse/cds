@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css2?family=Open Sans&display=swap' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css2?family=Monoton&display=swap' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="computer1.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <title>ASSESSORIES | CDS</title>
+   <style>
+       @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --gray: #ededed;
+    --medium:rgba(255, 255, 255, 0.493);
+    --blue: mediumslateblue;
+} 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.container{
+    width: 88vw;
+    margin: 0 auto;
+   
+}
+.lg-title,
+.md-title,
+.sm-title{
+   
+    padding: 0.6rem 0;
+    text-transform: capitalize;
+  
+}
+.lg-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1.3rem 0;
+    opacity: 0.9;
+   
+}
+.md-title{
+    font-size: 2rem;
+   
+   
+}
+.sm-title{
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+/* product section */
+.products{
+    background: var(--alice-blue);
+    padding: 3.2rem 0;
+    
+}
+.products .text-light{
+    text-align: center;
+    width: 70%;
+    margin: 0.9rem auto;
+}
+.product{
+    margin: 2rem;
+    position: relative;
+   
+}
+.product-content{
+    background: var(--gray);
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+}
+.product-img{
+    background: var(--white-light);
+    box-shadow: 0 0 20px 10px var(--white-light);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: background 0.5s ease;
+}
+.product-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.btn-cart, .btn-buy{
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    width: 125px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+}
+.btn-cart{
+    background: black;
+    color: white;
+}
+.btn-cart:hover{
+    background: #8400c3;
+}
+.btn-buy{
+    background: white;
+}
+.btn-buy:hover{
+    background:#8400c3;
+    color: black;
+}
+.product-info{
+    background: white;
+    padding: 2rem;
+}
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating span{
+    color: var(--blue);
+}
+.product-name{
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-price{
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+}
+.product-price:first-of-type{
+    text-decoration: line-through;
+    color: var(--blue);
+}
+.product-img img{
+    transition: transform 0.6s ease;
+}
+.product:hover .product-img img{
+    transform: scale(1.1);
+}
+.product:hover .product-img{
+    background: var(--medium);
+}
+.product:hover .product-btns{
+    opacity: 1;
+}
+.off-info .sm-title{
+    background:#8400c3;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    z-index: 1;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+/* product collection */
+.product-collection{
+    padding: 3.2rem 0;
+}
+.product-collection-wrapper{
+    padding: 3.2rem 0;
+}
+.product-col-left{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(PC2.jpg) center/cover no-repeat;
+}
+.product-col-r-top{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(PC7.jpg) center/cover no-repeat;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50vh;
+    padding: 2rem 1.5rem 3.2rem;
+    margin: 5px;
+}
+.product-col-r-bottom > div:first-child{
+    background: var(--blue);
+}
+.product-col-r-bottom > div:last-child{
+    background: darkgreen;
+}
+.product-col-content{
+    text-align: center;
+    color: white;
+}
+.product-collection .text-light{
+    opacity: 1;
+    font-size: 0.8;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.btn-dark{
+    background: black;
+    color: white;
+    outline: 0;
+    border-radius: 25px;
+    padding: 0.7rem 1rem;
+    border: 0;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    font-size: 1rem;
+    font-family: inherit;
+}
+.btn-dark:hover{
+    background: var(--medium);
+}
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-col-r-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .products .text-light{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product-collection-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex{
+        height: 60vh;
+    }
+    .product-col-left{
+        height: 121.5vh;
+    }
+}
+
+.navigation 
+            {
+                display: flex;
+                align-items: center;
+                padding: 20px;
+            }
+
+            body 
+            {
+                font-family:'M PLUS Rounded 1c', sans-serif;
+            }
+        
+            .nav{
+                flex: 1;
+                text-align: right;
+            }
+        
+            nav ul {
+                display: inline-block;
+                list-style-type: none;
+                margin-right: 300px;
+              
+            }
+        
+            nav ul li {
+        
+             display: inline-block;
+             margin-right: 70px;
+        
+            }
+
+            nav ul li:hover
+       {
+        border-bottom: 1px solid black;
+        padding-bottom: 1px;
+       }
+
+      
+       .fi 
+{
+    color: white;
+}
+
+
+.fi:hover
+{
+transform: scale(1.2);
+}
+
+
+   
+        
+           
+        
+            li a{
+                text-decoration: none;
+                color: #555;
+            }
+        
+           
+        
+            .icons {
+                margin-top: -40px;
+            }
+        
+            .icons img {
+                margin-right: 20px;
+           
+               
+               
+            }
+        
+            .icons img:hover
+            {
+                
+                -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   
+                
+                
+            }
+
+            ::-webkit-scrollbar
+{
+    width: 15px;
+}
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: black;
+    border-radius: 10px;
+}
+
+            .row 
+       {
+           display: flex;
+           align-items: center;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           
+       }
+
+       
+
+       .side1
+       {
+           flex-basis: 50%;
+           max-width: 300px;
+           margin-bottom: 100px;
+       }
+
+       .side2 
+       {
+              max-width: 100%;
+              padding: 50px,0;
+              margin-bottom : 100px;
+             
+       }
+
+ 
+.footer_logo
+{
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}
+
+.footer_logo:hover
+{
+    -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   
+   
+}
+
+.footer_motto
+{
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.first_col
+{
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+
+}
+
+.minor
+{
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+a.big 
+{
+   margin-top: 30px;
+}
+
+a.big :hover
+{
+    -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   
+
+}
+
+.tooltip
+{
+    font-size: 10px;
+    margin-left: -180px;
+    margin-bottom: 20px;
+}
+
+ .btn-cart .tooltip 
+{
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: white;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+margin-left: -110px;
+margin-top: -40px;
+
+}
+
+.btn-cart:hover .tooltip
+{
+visibility: visible;
+}
+
+
+        
+   </style>
+</head>
+
+    <body>
+
+        <div class = "products">
+            <div class = "container">
+
+                <div class="navigation">
+                    <div class="logo">
+                        <a class="big" href="index.html"><img src="logo1.png" width="50px"></a>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a style="color: black;" href="best.html">Products</a></li>
+                            <li><a style="color: black;"href="About.html">About</a></li>
+                            <li><a style="color: black;"href="Booking.html">Booking</a></li>
+                            <li><a style="color: black;"href="Contact.html">Contact us</a></li>
+                
+                        </ul>
+                        <div class="icons">
+                           <a href="#"><img src="search.png"></a>
+                           <a href="#"><img src="bag.png"></a>
+                           <a href="login."><img src="user.png"></a>
+                           
+                           
+                        </div>
+                    </nav>
+                </div><br><br><br>
+
+                <h1 class = "lg-title">Assessories</h1>
+                
+
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "Pic16.png" width="200px" style="margin-top: -10px;">
+                            </div>
+                            <div class = "product-btns">
+                             <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                    <span class="tooltip">Not available yet! </span>
+                                </button></a>
+                                
+                                <a href="#"><button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button></a>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Top deal</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Multicoloured Bluetooth Speaker</a>
+                            <p class = "product-price"> &#8358 80,000</p>
+                            <p class = "product-price"> &#8358 50,000</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">40% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img style="margin-top: -10px; margin-left: 30px;" src = "Pic17.png" width="150px" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                    <span class="tooltip">Not available yet! </span>
+                                </button>
+                                <a href="#" ><button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button></a>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Top deal</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Play Station with Joystick (Black)</a>
+                            <p class = "product-price"> &#8358 300,000</p>
+                            <p class = "product-price"> &#8358 290,000</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img style="margin-top: 10px;" src = "Pic18.png" width="200px" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                    <span class="tooltip">Not available yet! </span>
+                                </button>
+                                <a href="#"><button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button></a>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Top Deal</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Black Printer (HD Quality Images)</a>
+                            <p class = "product-price"> &#8358 100,000</p>
+                            <p class = "product-price"> &#8358 80,000</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img style="margin-left: 40px; margin-top: 30px;" src = "Pic19.png" width="120px" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                    <span class="tooltip">Not available yet! </span>
+                                </button>
+                                <a href="#" ><button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button></a>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Top Deal</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">32GB Flash With Hook (Silver and Blue)</a>
+                            <p class = "product-price"> &#8358 25,000</p>
+                            <p class = "product-price"> &#8358 15,000 </p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">40% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img style="margin-top: 10px;" src = "Pic20.png" width="200px" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                    <span class="tooltip">Not available yet! </span>
+                                </button>
+                                <a href="#" ><button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button></a>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Top deal</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">DCLR Camera Personal Use (Black)</a>
+                            <p class = "product-price"> &#8358 200,000</p>
+                            <p class = "product-price"> &#8358 150,000</p>
+                        </div>
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img style="margin-top: 0px; margin-left: 0px;" src = "Pic21.png" width="200px" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                    
+                                    <span class="tooltip">Not available yet! </span>
+                                </button>
+                                <a href="#" ><button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button></a>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Top Deal</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Earbuds with case (White)</a>
+                            <p class = "product-price">&#8358 40,000</p>
+                            <p class = "product-price">&#8358 20,000</p>
+                        </div>
+                        
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img style="margin-top: 15px; margin-left: 20px;" src = "Pic22.png" width="150px" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                    <span class="tooltip">Not available yet! </span>
+                                </button>
+                                <a href="#"><button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button></a>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Top deal</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">3D Printer (Size of a small room) </a>
+                            <p class = "product-price">&#8358 2,000,000</p>
+                            <p class = "product-price">&#8358 1,999,000</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">65% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img style="margin-left: 50px; margin-top: 40px;" src = "Pic23.png" width="100px" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                    <span class="tooltip">Not available yet! </span>
+                                </button>
+                                <a href="#"><button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button></a>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Top deal</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Silver Selfie stick (54-inches)</a>
+                            <p class = "product-price">&#8358 20,000 </p>
+                            <p class = "product-price">&#8358 10,000</p>
+                        </div>
+
+                       
+                    </div>
+                    <!-- end of single product -->
+                </div>
+            </div>
+        </div>
+
+        <div class = "product-collection">
+            <div class = "container">
+                <div class = "product-collection-wrapper">
+                    <!-- product col left -->
+                    <div class = "product-col-left flex">
+                        <div class = "product-col-content">
+                            <h2 class = "sm-title">Summer sale</h2>
+                            <h2 class = "md-title">Minimum of 10% off</h2>
+                            <p class = "text-light">
+                                All laptops, desktops, computer sets etc. T&C's apply
+                            </p>
+                            <a href="Laptop.html"  target="_blank"><button type = "button" class = "btn-dark">Shop now</button></a>
+                        </div>
+                    </div>
+
+                    <!-- product col right -->
+                    <div class = "product-col-right">
+                        <div class = "product-col-r-top flex">
+                            <div class = "product-col-content">
+                                <h2 class = "sm-title">Best Collection</h2>
+                                <h2 class = "md-title">Phones</h2>
+                                <p class = "text-light">Get all your favorite phones from Iphones to Huawei to samsung phones of the best editions, styles and colours.</p>
+                                <a href="phones.html"  target="_blank"><button type = "button" class = "btn-dark">Shop now</button></a>
+                            </div>
+                        </div>
+
+                        <div class = "product-col-r-bottom">
+                            <!-- left -->
+                            <div class = "flex">
+                                <div class = "product-col-content">
+                                    <h2 class = "sm-title">Best Collection</h2>
+                                    <h2 class = "md-title">Gadget assessories</h2>
+                                    <p class = "text-light">Better productivity with better gadgets</p>
+                                    <a href="assessories.html" target="_blank"><button type = "button" class = "btn-dark">Shop now</button></a>
+                                    
+                                </div>
+                            </div>
+                            <!-- right -->
+                            <div class = "flex">
+                                <div class = "product-col-content">
+                                    <h2 class = "sm-title">Best Collection</h2>
+                                    <h2 class = "md-title">Best <br> Deals</h2>
+                                    <p class = "text-light">Grab the best of gadgets while you can!  :)</p>
+                                    <a href="Best.html" target="_blank"><button type = "button" class = "btn-dark">Shop now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="background-color: black;">
+                    <div class="side1">
+                        <a href="index.html"><img class="footer_logo" src="logo2.png" width="90px"></a>
+                        <p class="footer_motto">  Whatever you want at the best prices you will like<br><br>
+                            <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%; padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://facebook.com" target="_blank"><img src="fa.png" height="20px"></button></a>
+        <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://instagram.com" target="_blank"><img src="IG.png" height="20px"></button></a>
+        <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://twitter.com" target="_blank"><img src="twit.png" height="20px"></button></a>
+        <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://tiktok.com" target="_blank"><img src="tiktok.png" height="20px"></button></a>
+                       
+                        
+                    </div>
+                  
+                    <div class="side2"><br><br><br><br><br><br>
+                        <p class="first_col">
+                            
+                            Products/Services<br><br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="best.html"  target="_blank">Best deals</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="desktops.html"  target="_blank">Desktops</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Laptop.html"  target="_blank">Laptops</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="assessories.html"  target="_blank">Assessories</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="tablets.html" target="_blank">Tablets</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="phones.html"  target="_blank">Phones</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Booking.html"  target="_blank">Booking</a> <br>
+                            
+                           
+                
+                        </p>
+                      
+                    </div>
+                
+                    <div class="side1" style="margin-left: -5%;"><br><br><br><br><br><br>
+                
+                        <p class="first_col">
+                            
+                            Features<br><br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="search.html" target="_blank">Search</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Shop.html" target="_blank">Account</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="About.html" target="_blank">About us</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Brochure.html" target="_blank">Brochure</a> <br>
+                           <br><br><br>
+                
+                            
+                      
+                        
+                    </div>
+                
+                    <div class="side2" style="margin-left: -18%;"><br><br><br><br><br><br>
+                
+                        <p class="first_col">
+                            
+                            Support<br><br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html " target="_blank">Email</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html" target="_blank">Whatsapp</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html" target="_blank">Social media</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html" target="_blank">Phone support</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html" target="_blank">Location</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html" target="_blank">Phones</a> <br>
+                            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html" target="_blank">Community</a> <br>
+                
+                            
+                      
+                        
+                    </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

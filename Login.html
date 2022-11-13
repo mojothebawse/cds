@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css2?family=Open Sans&display=swap' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css2?family=Monoton&display=swap' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="computer1.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>LOG IN | CDS</title>
+    <style>
+    body
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'M PLUS Rounded 1c', sans-serif;
+            background-image: linear-gradient(to right,#0a0095bb, #fe00f1c2); background-repeat:no-repeat ; background-size: contain;
+        }
+    
+        .navigation 
+        {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+        }
+    
+        .nav{
+            flex: 1;
+            text-align: right;
+        }
+    
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+            margin-right: 200px;
+          
+        }
+    
+        nav ul li {
+    
+         display: inline-block;
+         margin-right: 80px;
+    
+        }
+
+        nav ul li :hover
+       {
+        border-bottom: 1px solid black;
+        padding-bottom: 1px;
+        cursor: pointer;
+       }
+    
+       
+    
+        li a{
+            text-decoration: none;
+            color: #555;
+        }
+    
+       
+        .container
+        {
+            max-width: 1200px;
+            min-width: 1200px;
+            margin: auto;
+            padding-left: 70px;
+            padding-right: 70px;
+
+        }
+    
+        .icons {
+            margin-top: -40px;
+        }
+    
+        .icons img {
+            margin-right: 20px;
+       
+           
+           
+        }
+    
+        .icons img:hover
+        {
+            
+            -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+           
+    
+            
+            
+        }
+
+        ::-webkit-scrollbar
+{
+    width: 15px;
+}
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: black;
+    border-radius: 10px;
+}
+    
+
+#hi
+{
+    border: none;
+    outline:0;
+    border-bottom: 1px solid grey;
+    position:absolute;
+    left: 20%;
+    top: 95%;
+    font-size: 10px;
+    cursor:pointer;
+    inline-size: 350px;
+    transition: border-color 0.2s;
+
+
+}
+        a.big 
+    {
+       margin-top: 30px;
+    }
+    
+    a.big :hover
+    {
+        -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+           
+    }
+    
+    .row 
+           {
+               display: flex;
+               align-items: center;
+               flex-wrap: wrap;
+               justify-content: space-around;
+               
+             
+               
+           }
+    
+           
+    
+           .side1
+           {
+               flex-basis: 50%;
+               max-width: 300px;
+               margin-top: -140px;
+              
+           }
+    
+           .side2 
+           {
+                  max-width: 100%;
+                  padding: 50px,0;
+                 
+           }
+    
+         
+            button.btn {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: black;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #090095, #fe00f2);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px #fff inset;
+}
+
+button:hover {
+  box-shadow: none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  
+}
+  
+  
+
+button:hover {
+  box-shadow: none;
+  color: white;
+ 
+}
+    
+           
+    .footer_logo
+    {
+        margin-left: -100px;
+        margin-top: 290px;
+        position: absolute;
+        top:660px;
+    
+        
+    }
+
+    .footer_logo:hover
+    {
+        -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+           
+    }
+    
+    .footer_motto
+    {
+        margin-left: 30px;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .first_col
+    {
+        color: white;
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 60px;
+    
+    }
+
+
+
+
+
+
+.form-container
+{
+    background-color: rgba(255, 255, 255, 0.239);
+    width: 500px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px, 0;
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 0px,0px, 20px, 0px rgb(0, 0, 0,0.5);
+}
+
+.form-container span
+{
+    font-weight: bold;
+    padding: 0, 20px;
+    color:rgba(255, 255, 255, 0.657);
+    cursor:pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.btn
+{
+    display: inline-block;
+    height: 40px;
+}
+
+.form-container
+{
+    max-width: 300px;
+    padding: 40px, 20px;
+   
+    
+    
+}
+
+form input
+{
+width: 80%;
+height: 30px;
+margin:10px, 0px;
+padding: 0px, 10px;
+background: transparent;
+color: white;
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom: 1px solid rgba(255, 255, 255, 0.657);
+
+
+}
+
+input:focus
+{
+   
+  
+  transition: 0.2s;
+  font-size: 15px;
+  padding-bottom: 10px;  
+  border-width: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.561);
+  outline: none;
+  background: transparent;
+  
+ 
+}
+
+::placeholder
+{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.657);
+    transition: 0.2s;
+  
+}
+
+
+.footer_logo
+    {
+
+
+        margin-left: -100px;
+        margin-top: 90px;
+        
+    
+        
+    }
+
+    .first_col
+    {
+        color: white;
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 60px;
+    
+    }
+
+    .fi 
+{
+    color: white;
+}
+
+
+.fi:hover
+{
+transform: scale(1.2);
+}
+
+::-webkit-scrollbar
+{
+    width: 15px;
+}
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: black;
+    border-radius: 10px;
+}
+
+
+
+
+
+  
+</style>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="logo">
+                <a class="big" href="index.html"><img src="logo1.png" width="50px"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a style="color: black;" href="best.html">Products</a></li>
+                    <li><a style="color: black;"href="About.html">About</a></li>
+                    <li><a style="color: black;"href="Booking.html">Booking</a></li>
+                    <li><a style="color: black;"href="Contact.html">Contact us</a></li>
+        
+                </ul>
+              
+            </nav>
+        </div><br><br><br>
+        
+        <div class="row">
+            <div class="side1">
+                <img src="log1.png" width="600px" style="margin-top: 140px; margin-left: -150px;" >
+                
+            </div>
+          
+            <div class="side2">
+               <div class="form-container">
+                   <div class="top"><br>
+                       <span style="border-bottom: 2px solid #090095; padding-bottom: 10px;">Log In</span>
+                       <a href="Login2.html"><span>Sign-up</span></a>
+                       
+                   </div>
+
+<form id="logform"><br>
+    <img src="images.png" width="70px"><br><br>
+    <input type="text" placeholder="Username"  class="easy"><br><br>
+    <input  type="password" placeholder="Password" class="easy#2"><br><br>
+    <a style="text-decoration: none; color: purple; font-size: 17px;" href="Recover_account.html">Forgot Password?</a><br><br>
+    <a href="index.html"><button type="button" class="btn">Log In</button></a><br><br>
+  
+</form>
+</div>
+</div>
+</div>
+
+
+    
+
+
+
+        </div>
+        
+        
+    <br><br><br>
+
+        <div class="row" style="background-color: black; width: 1349px; height: 150px; ">
+            <div class="side1">
+                <a href="index.html"><img class="footer_logo" src="logo2.png" width="90px"></a><span style="color: white; position:relative; top: 90px;"> &copy;2021 | by Computer Discount Shop LTD</span>
+            </div>
+          
+            <div class="side2">
+                <p class="first_col">
+                    
+                    <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%; padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://facebook.com" target="_blank"><img src="fa.png" height="20px"></button></a>
+                            <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://instagram.com" target="_blank"><img src="IG.png" height="20px"></button></a>
+                            <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://twitter.com" target="_blank"><img src="twit.png" height="20px"></button></a>
+                            <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://tiktok.com" target="_blank"><img src="tiktok.png" height="20px"></button></a>
+                </p>
+            </div>
+
+            
+             </div>
+
+        
+
+
+        </div>
+        
+            
+    </body>
+    </html>
+    
+   

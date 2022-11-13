@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HOME | CDS </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="computer1.png"/>
+    <link href='https://fonts.googleapis.com/css2?family=Monoton&display=swap' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+<body>
+<div class="nav-container">
+<div class="nav-bar">
+    <div class="nav-logo"> CDS </div>
+<div class="menu-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+<ul class="nav-menu">
+<li><a href="#" class="nav-links">Home</a></li>
+<li><a href="#" class="nav-links">Products</a></li>
+<li><a href="#" class="nav-links">About</a></li>
+<li><a href="#" class="nav-links">Booking</a></li>
+<li><a href="#" class="nav-links">Contact</a></li>
+
+</ul>
+</div>
+</div>
+<section class="section1">
+<div class="main-box">
+    <h1 class="home-title">
+        <span class="txt1">Your Favorite Gadgets</span>
+        <span class="txt2">All In One Place</span>
+      </h1>
+    <div class="home-main-image">
+    <img src="header-img.png" >
+</div>
+</div>
+</section>
+    
+<script>
+
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click', function()
+    {
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    })
+</script>
+
+</body>
+</html>

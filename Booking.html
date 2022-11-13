@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css2?family=Open Sans&display=swap' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css2?family=Monoton&display=swap' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="computer1.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Booking | CDS</title>
+</head>
+<style>
+        
+    body
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #ececec;
+        font-family:'M PLUS Rounded 1c', sans-serif;
+    }
+
+    .navigation 
+    {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav{
+        flex: 1;
+        text-align: right;
+       
+    }
+
+    nav ul {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 280px;
+      
+    }
+
+    nav ul li {
+
+     display: inline-block;
+     margin-right: 80px;
+
+    }
+
+    nav ul li:hover
+       {
+        border-bottom: 1px solid black;
+        padding-bottom: 1px;
+       }
+
+       .fi 
+{
+    color: white;
+}
+
+
+.fi:hover
+{
+transform: scale(1.2);
+}
+
+   
+
+    li a{
+        text-decoration: none;
+        color: #555;
+    }
+
+   
+    .container
+    {
+        max-width: 1200px;
+        min-width: 1200px;
+        margin: auto;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .icons {
+        margin-top: -40px;
+    }
+
+    .icons img {
+        margin-right: 20px;
+   
+       
+       
+    }
+
+    .icons img:hover
+    {
+        
+        -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+
+        
+        
+    }
+
+    .row 
+    {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    
+
+    .side1
+    {
+        flex-basis: 50%;
+        max-width: 300px;
+    }
+
+    .side2 
+    {
+           max-width: 100%;
+           padding: 50px,0;
+          
+    }
+
+    .first {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color:black;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #090095, #fe00f2);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px transparent inset;
+  
+}
+
+.first:hover {
+  box-shadow: none;
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+
+
+.butt {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color:black;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #090095, #fe00f2);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px rgba(255, 255, 255, 0.507) inset;
+  
+}
+
+.butt:hover {
+  box-shadow: none;
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+
+    .second
+    {       
+        border: none;
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+        margin-left: 30px;
+        cursor: pointer;
+        
+    }
+
+    .second:hover
+    {
+        font-size: 14px;
+       
+    }
+    .footer_logo
+{
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}
+
+.footer_logo:hover
+{
+   -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   
+}
+
+.footer_motto
+{
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.first_col
+{
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+
+}
+
+
+
+
+.minor
+{
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+a.big 
+{
+   margin-top: 30px;
+}
+
+
+ a.big :hover
+{
+    -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+}
+
+
+
+.main
+{
+ position: absolute;
+ top: 350px;
+ margin-left: 560px;
+ color: rgba(255, 255, 255, 0.808);
+ font-size: 60px;
+ animation: slideleft 1s forwards;
+
+
+}
+
+@keyframes slideleft
+{
+    0%
+    {
+        transform:translateY(250px);
+       
+    }
+
+    100%
+    {
+        transform:translateY(0px);
+        
+    }
+}
+
+
+
+
+.pic1
+{
+    background-color:black;
+        width: 1352px;
+        margin-left: -75px;
+      
+       
+}
+
+.pic
+{
+    object-fit: cover;
+   opacity:0.5 ;
+}
+
+.box1
+{
+    border: 3px solid grey;
+    background-color: rgba(85, 85, 85, 0.466);
+    width:320px;
+    overflow: visible;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    margin-left: 67px;
+    z-index: 1;
+    margin-top: 300px;
+
+}
+
+.tool
+{
+ margin-left: -10px;
+}
+
+.tooltip
+{
+    font-size: 10px;
+    margin-left: -180px;
+    margin-bottom: 20px;
+}
+
+ .tool .tooltip 
+{
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+
+}
+
+.tool:hover .tooltip
+{
+visibility: visible;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: black;
+    border-radius: 10px;
+}
+
+
+
+   
+    </style>
+<body>
+
+    <div class="container">
+        <div class="navigation">
+            <div class="logo">
+                <a class="big" href="index.html"><img src="logo1.png" width="50px"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a style="color: black;" href="best.html">Products</a></li>
+                    <li><a style="color: black;"href="About.html">About</a></li>
+                    <li><a style="color: black;"href="Booking.html">Booking</a></li>
+                    <li><a style="color: black;"href="Contact.html">Contact us</a></li>
+        
+                </ul>
+                <div class="icons">
+                   <a href="search.html"><img src="search.png"></a>
+                   <a href="shop.html"><img src="bag.png"></a>
+                   <a href="Login.html"><img src="user.png"></a>
+                   
+                   
+                </div>
+            </nav>
+        </div><br><br>
+
+    <div class="pic1">
+        <img class="pic" src="book13.jpg" width="1372px" height="800px" style="margin-left: -20px;">
+        <h1 class="main">Book Now<br>
+            <span style="font-size: 22px;margin-left: -190px;"> Get a room well equiped with gadgets  
+            for all kinds of purposes</span><br>
+
+          
+
+            <div class="tool"><a href="reg.html"><button class="first">Open for 24 hours &#8594</button></a>
+            <span class="tooltip">Register Now!</span></div>
+           
+            
+        </h1>
+        
+    </div><br>
+
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Music production Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">Get acess to flat screen monitors, mixers, sound quality mics and speakers 
+                and cool lighting to set the mood for creativity.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 1,000 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book2.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1> Gaming Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                The gaming rooms are equiped with custom controllers, gaming pc's, gaming consoles,comfortable gaming chairs, 
+                well condititioned atmosphere and cool lighting. Each room can house 30 gamers.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 1,000 per hour (per person)</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book3.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>General study room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                A large well condititioned and well lit  reading room. Bring your own devices and get a quiet place to work.
+                Each hall can house 100 people conveniently.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 100 per hour (per person)</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book4.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Group work space</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                A  glass-walled room that gives a jaw-dropping city view. It is well equiped and 
+                conditioned with laptops, monitors, producing sets, gaming equipment and cool lighting. 
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 2,500 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book5.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Conference Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+             A meduim sized conference room with a 65 inch projecting TV, confortable seats air conditioning, and 
+             a professional ambience. Each room can house 12 people.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 2,000 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book6.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Single Work Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                An individual work space conditioned and equiped with a monitor, keyboard, tablet,
+                speakers and head-sets.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 400 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book7.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Minimalistic Editing Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                Get acess to an individualistic and minimalistic room with photography equipments,
+                full-service editing softwares and a simple ambience.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 500 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book8.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Simple Work Room (No equipment)</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                Get acess to an individual room, air-conditioned with great ambience. 
+                Bring your own gadgets and tools for a quiet place to study and an affordable price.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 150 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book9.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Simple Work Room (Unique style)</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                A medium-sized individual room equiped with a monitor, head-sets, speaker
+                and cool ambience with air-conditioning.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 200 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book10.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Massive Library</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                In partnership with the Central Library Lagos, we provide sevral roundtable 
+                workstations fully equiped desktops in a conditioned environment. 
+                There are enough workstations for 200 people.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 20 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book11.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Mini Gaming Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                A smaller gaming room housing 5 people. It is equiped and conditioned with
+                gaming PC, gaming consoles, custom controllers, gaming headsets, virtual-reality headsets, and many 
+                games to choose from.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 1,000 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book12.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Lounge Computer Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+            A chill room with sofas and a TV screen but also workstations equiped with 
+            desktops and air-conditioned. A place to work and relax with friends. It can house 
+            10 people conveniently.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 1,500 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book14.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1> Single Room (With supplies) </h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+
+            Work on all types of projects. We provide you with gadgets and stationery
+            like art-supplies, notebooks, pens and much more. 
+
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 200 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book15.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Professional Gaming Studio</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                Our best gaming room, with single user experience. Equipes with double screens,
+                gaming light-up keyboard and mouse, gaming chair and headset and some cool dark aesthetic.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 1,000 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book16.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+    
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Lit-Up Single Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                Though all our rooms are equiped with the fastest internet speed in the country thanks
+                to our awesome service providers, this room has the best connection, style and 
+                one of the highest productivity rates based on customer reviews.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 900 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book17.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>White Aesthetic Single Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+Equiped with computer, graphic-design and music-production tools all at your convenience.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 400 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book18.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>Small General Computer Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                20 desktops in an aesthetically designed room, with air-conditioning and other equipments
+                such as virtual-reality stations.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 300 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book19.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+ 
+    <div class="row">
+        <div class="side1">
+           <div class="box1">
+
+            <h1>General Computer Room</h1>
+            <h4 style="border-bottom: 1px solid rgba(0, 0, 0, 0.493); padding-bottom: 30px;">
+                200 desktops in one well air-conditioned room and a central printing station for you to be at your peak of productivity.
+            </h4><br>
+           <span style="font-size: 20px;"><b>&#8358 150 per hour</b></span><br><br><br>
+           <a href="reg.html"><button class="butt">Book Now &#8594</button></a><br><br>
+           </div>
+            
+        </div>
+      
+        <div class="side2">
+            <img src="book1.jpg" width="700px" style="margin-left: 100px; z-index: -1; position: relative ;">
+        </div>
+       
+    </div><br><br><br>
+
+    
+
+
+    <div class="row" style="background-color: black;">
+        <div class="side1">
+            <a href="index.html"><img class="footer_logo" src="logo2.png" width="90px"></a>
+            <p class="footer_motto">  Whatever you want at the best prices you will like<br><br>
+                <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%; padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://facebook.com" target="_blank"><img src="fa.png" height="20px"></button></a>
+                <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://instagram.com" target="_blank"><img src="IG.png" height="20px"></button></a>
+                <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://twitter.com" target="_blank"><img src="twit.png" height="20px"></button></a>
+                <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://tiktok.com" target="_blank"><img src="tiktok.png" height="20px"></button></a>
+               
+            
+        </div>
+      
+        <div class="side2"><br><br><br><br><br><br>
+            <p class="first_col">
+                
+                Products/Services<br><br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="best.html">Best deals</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="desktops.html">Desktops</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Laptop.html">Laptops</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="assessories.html">Assessories</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="tablets.html">Tablets</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="phones.html">Phones</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Booking.html">Booking</a> <br>
+                
+               
+    
+            </p>
+          
+        </div>
+    
+        <div class="side1" style="margin-left: -5%;"><br><br><br><br><br><br>
+    
+            <p class="first_col">
+                
+                Features<br><br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="search.html">Search</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="shop.html">Account</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="About.html">About us</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Brochure.html">Brochure</a> <br>
+               <br><br><br>
+                
+    
+                
+          
+            
+        </div>
+    
+        <div class="side2" style="margin-left: -18%;"><br><br><br><br><br><br>
+    
+            <p class="first_col">
+                
+                Support<br><br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Email</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Whatsapp</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Social media</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html">Phone support</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html">Location</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html">Phones</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Community</a> <br>
+    
+                
+          
+            
+        </div>
+    
+    
+</body>
+</html>
