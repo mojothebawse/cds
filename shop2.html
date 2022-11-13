@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DESKTOP | CDS </title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="computer1.png"/>
+    <!----Font CDN Link---->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
+
+    <style>
+        /* ----- Variables ----- */
+/* ----- Global ----- */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  display: grid;
+  grid-template-rows: 1fr;
+  font-family:'M PLUS Rounded 1c', sans-serif;
+  background-color: #ececec;
+}
+
+h3 {
+  font-size: 0.7em;
+  letter-spacing: 1.2px;
+  color: #a6a6a6;
+}
+img {
+  max-width: 100%;
+  filter: drop-shadow(1px 1px 3px #a6a6a6);
+}
+/* ----- Product Section ----- */
+.product {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  margin: auto;
+  padding: 2.5em 0;
+  min-width: 600px;
+  background-color: white;
+  border-radius: 5px;
+}
+/* ----- Photo Section ----- */
+.product__photo {
+  position: relative;
+}
+.photo-container {
+  position: absolute;
+  left: -2.5em;
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+}
+.photo-main {
+  border-radius: 6px 6px 0 0;
+  background-color:  #f8f9fa;
+  background: radial-gradient(  #f8f9fa, mediumslateblue);
+}
+.photo-main .controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8em;
+  color: #fff;
+}
+.photo-main .controls i {
+  cursor: pointer;
+}
+.photo-main img {
+  position: absolute;
+  left: -3.5em;
+  top: 2em;
+  margin-top: 30px;
+  margin-left: 20px;
+  max-width: 110%;
+  filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+}
+.photo-album {
+  padding: 0.7em 1em;
+  border-radius: 0 0 6px 6px;
+  background-color: #fff;
+}
+.photo-album ul {
+  display: flex;
+  justify-content: space-around;
+}
+.photo-album li {
+  float: left;
+  width: 55px;
+  height: 55px;
+  padding: 7px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+}
+/* ----- Informations Section ----- */
+.product__info {
+  padding: 0.8em 0;
+}
+.title h1 {
+  margin-bottom: 0.1em;
+  color: #4c4c4c;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.title span {
+  font-size: 0.7em;
+  color: #a6a6a6;
+}
+.price {
+  margin: 1.5em 0;
+  color: black;
+  font-size: 1.2em;
+}
+.price span {
+  padding-left: 0.15em;
+  font-size: 2.9em;
+}
+.variant {
+  overflow: auto;
+}
+.variant h3 {
+  margin-bottom: 1.1em;
+}
+.variant li {
+  float: left;
+  width: 75px;
+  height: 75px;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: -40px;
+}
+.variant li:first-child, .variant li:hover {
+  border: 1px solid #a6a6a6;
+}
+.variant li:not(:first-child) {
+  margin-left: 0.1em;
+}
+.description {
+  clear: left;
+  margin: 2em 0;
+}
+.description h3 {
+  margin-bottom: 1em;
+}
+.description ul {
+  font-size: 0.8em;
+  list-style: disc;
+  margin-left: 1em;
+}
+.description li {
+  text-indent: -0.6em;
+  margin-bottom: 0.5em;
+}
+.buy--btn {
+  padding: 1.5em 3.1em;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #fff;
+  background-color: black;
+  box-shadow: 2px 2px 25px -7px #4c4c4c;
+  cursor: pointer;
+}
+.buy--btn:active {
+  transform: scale(0.97);
+}
+
+
+
+       .navigation 
+       {
+           display: flex;
+           align-items: center;
+           padding: 20px;
+           max-width: 1200px;
+           min-width: 1200px;
+           margin: auto;
+       }
+
+       .nav{
+           flex: 1;
+           text-align: right;
+       }
+
+       nav ul {
+           display: inline-block;
+           list-style-type: none;
+           margin-right: 300px;
+         
+       }
+
+       nav ul li {
+
+        display: inline-block;
+        margin-right: 70px;
+
+       }
+
+       nav ul li:hover
+       {
+        border-bottom: 1px solid black;
+        padding-bottom: 1px;
+       }
+
+      
+
+       li a{
+           text-decoration: none;
+           color: #555;
+       }
+
+       .icons {
+           margin-top: -40px;
+       }
+
+       .icons img {
+           margin-right: 20px;
+      
+          
+          
+       }
+
+       .icons img:hover
+       {
+           
+        -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+
+           
+           
+       }
+
+       .row 
+       {
+           display: flex;
+           align-items: center;
+           flex-wrap: wrap;
+           justify-content: space-around;
+       }
+
+       
+
+       .side1
+       {
+           flex-basis: 50%;
+           max-width: 300px;
+       }
+
+       .side2 
+       {
+              max-width: 100%;
+              padding: 50px,0;
+             
+       }
+       .footer_logo
+{
+    margin-left: 30px;
+    margin-top: 50px;
+    
+}
+
+.footer_logo:hover
+{
+    -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   
+}
+
+.footer_motto
+{
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.first_col
+{
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+
+}
+
+.minor
+{
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+a.big 
+{
+   margin-top: 30px;
+}
+
+a.big :hover
+{
+    -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+}
+
+
+::-webkit-scrollbar
+{
+    width: 15px;
+}
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: black;
+    border-radius: 10px;
+}
+
+.tooltip
+{
+    font-size: 10px;
+    margin-left: -180px;
+    margin-bottom: 20px;
+}
+
+ .buy--btn .tooltip 
+{
+visibility: hidden;
+width: 120px;
+background-color: white;
+color: black;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+margin-left: 40px;
+
+}
+
+.buy--btn:hover .tooltip
+{
+visibility: visible;
+}
+
+.fi 
+{
+    color: white;
+}
+
+
+.fi:hover
+{
+transform: scale(1.2);
+}
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+      
+    <div class="navigation">
+        <div class="logo">
+            <a class="big" href="index.html"><img src="logo1.png" width="50px"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a style="color: black;" href="best.html">Products</a></li>
+                <li><a style="color: black;"href="About.html">About</a></li>
+                <li><a style="color: black;"href="Booking.html">Booking</a></li>
+                <li><a style="color: black;"href="Contact.html">Contact us</a></li>
+    
+            </ul>
+            <div class="icons">
+               <a href="search.html" ><img src="search.png"></a>
+               <a href="shop.html"><img src="bag.png"></a>
+               <a href="Login.html"><img src="user.png"></a>
+               
+               
+            </div>
+        </nav>
+    </div><br><br><br><br>
+    <section class="product">
+      <div class="product__photo">
+        <div class="photo-container">
+          <div class="photo-main">
+            <div class="controls">
+              <i class="material-icons">share</i>
+              <i class="material-icons">favorite_border</i>
+            </div>
+            <img src="desk.jpg" width="280px" style="margin-left: 50px; margin-top: 90px;">
+          </div>
+         
+        </div>
+      </div>
+      <div class="product__info">
+        <div class="title">
+          <h1>Dell Desktop</h1>
+          <span>CODE: 00006</span>
+        </div>
+        <div class="price">
+            &#8358 <span>250,000</span>
+        </div>
+        <div class="variant">
+          <h3>Related products</h3>
+          <ul style="list-style-type: none;">
+            <li><img src="Pic20.png"></li>
+            <li><img src="Pic33.png" ></li>
+            <li><img src="Pic39.png"></li>
+            <li><img src="Pic22.png"></li>
+          </ul>
+        </div>
+        <div class="description">
+          <h3>Color: Black</h3>
+          
+        </div>
+        <button class="buy--btn">Order Now
+          <span class="tooltip">Not available yet! Come back soon</span></button>
+      </div>
+    </section>
+
+    <div class="row" style="background-color: black;">
+        <div class="side1">
+            <a href="index.html"><img class="footer_logo" src="logo2.png" width="90px"></a>
+            <p class="footer_motto">  Whatever you want at the best prices you will like<br><br>
+              <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%; padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://facebook.com" target="_blank"><img src="fa.png" height="20px"></button></a>
+              <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://instagram.com" target="_blank"><img src="IG.png" height="20px"></button></a>
+              <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://twitter.com" target="_blank"><img src="twit.png" height="20px"></button></a>
+              <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://tiktok.com" target="_blank"><img src="tiktok.png" height="20px"></button></a>
+            
+        </div>
+      
+        <div class="side2"><br><br><br><br><br><br>
+            <p class="first_col">
+                
+                Products/Services<br><br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="best.html">Best deals</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="desktops.html">Desktops</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Laptop.html">Laptops</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="assessories.html">Assessories</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="tablets.html">Tablets</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="phones.html">Phones</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Booking.html">Booking</a> <br>
+                
+               
+    
+            </p>
+          
+        </div>
+    
+        <div class="side1" style="margin-left: -5%;"><br><br><br><br><br><br>
+    
+            <p class="first_col">
+                
+                Features<br><br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="search.html">Search</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="shop.html">Account</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="About.html">About us</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Brochure.html">Brochure</a> <br>
+               <br><br><br>
+                
+    
+                
+          
+            
+        </div>
+    
+        <div class="side2" style="margin-left: -18%;"><br><br><br><br><br><br>
+    
+            <p class="first_col">
+                
+                Support<br><br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Email</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Whatsapp</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Social media</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html">Phone support</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html">Location</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html">Phones</a> <br>
+                <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Community</a> <br>
+    
+                
+          
+            
+        </div>
+    
+  </body>
+</html>

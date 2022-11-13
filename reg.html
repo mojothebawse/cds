@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+<title> REGISTRATION | CDS </title>
+<link href='https://fonts.googleapis.com/css2?family=Open Sans&display=swap' rel='stylesheet' />
+<link href='https://fonts.googleapis.com/css2?family=Monoton&display=swap' rel='stylesheet' />
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="computer1.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body {
+font-weight: 400;
+color: #fff;
+letter-spacing: 1px;
+background-color: #ececec;
+font-family:'M PLUS Rounded 1c', sans-serif;
+}
+
+.container {
+margin: 100px;
+box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+display: grid;
+grid-template-columns: 40% 60%;
+}
+
+.container-time {
+background-color: rgba(0, 0, 0, .95);
+padding: 50px;
+outline: 3px dashed mediumslateblue;
+outline-offset: -30px;
+text-align: center;
+}
+
+.heading {
+font-size: 35px;
+text-transform: uppercase;
+}
+
+.heading-days {
+color:mediumslateblue;
+font-size: 30px;
+
+
+}
+
+.heading-phone {
+font-size: 20px;
+}
+
+.container-form {
+padding: 20px 0;
+margin: 0 auto;
+color: #000;
+}
+
+form {
+display: grid;
+grid-row-gap: 20px;
+}
+form p {
+font-weight: 600;
+}
+.form-field {
+display: flex;
+justify-content: space-between;
+}
+
+input,select {
+padding: 10px 15px;
+}
+
+.btn {
+background-color: rgba(0, 0, 0, .95);
+color: #fff;
+padding: 10px 20px;
+border: none;
+font-size: 18px;
+border-radius: 100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+-ms-border-radius: 100px;
+-o-border-radius: 100px;
+box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+cursor: pointer;
+transition: all .3s;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+-ms-transition: all .3s;
+-o-transition: all .3s;
+}
+
+.btn:hover {
+transform: scale(1.03);
+-webkit-transform: scale(1.03);
+-moz-transform: scale(1.03);
+-ms-transform: scale(1.03);
+-o-transform: scale(1.03);
+box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+
+
+       .navigation 
+       {
+           display: flex;
+           align-items: center;
+           padding: 20px;
+       }
+
+       .nav{
+           flex: 1;
+           text-align: right;
+       }
+
+       nav ul {
+           display: inline-block;
+           list-style-type: none;
+           margin-right: 280px;
+         
+       }
+
+       nav ul li {
+
+        display: inline-block;
+        margin-right: 70px;
+
+       }
+
+       nav ul li:hover
+       {
+        border-bottom: 1px solid black;
+        padding-bottom: 1px;
+       }
+
+      
+
+       li a{
+           text-decoration: none;
+           color: #555;
+       }
+
+      
+       .container1
+       {
+           max-width: 1200px;
+           min-width: 1200px;
+           margin: auto;
+           padding-left: 70px;
+           padding-right: 70px;
+       }
+
+       .icons {
+           margin-top: -40px;
+       }
+
+       .icons img {
+           margin-right: 20px;
+      
+          
+          
+       }
+
+       .icons img:hover
+       {
+           
+        -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+           
+           
+       }
+
+       ::-webkit-scrollbar
+{
+    width: 15px;
+}
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: black;
+    border-radius: 10px;
+}
+
+
+       .footer_logo
+{
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}
+
+.footer_logo:hover
+{
+    
+    -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   
+}
+
+.fi 
+{
+    color: white;
+}
+
+
+.fi:hover
+{
+transform: scale(1.2);
+}
+
+.footer_motto
+{
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.first_col
+{
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+
+}
+
+.minor
+{
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+a.big 
+{
+   margin-top: 30px;
+}
+
+a.big :hover
+{
+    
+    -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+}
+
+.row 
+    {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    
+
+    .side1
+    {
+        flex-basis: 50%;
+        max-width: 300px;
+    }
+
+    .side2 
+    {
+           max-width: 100%;
+           padding: 50px,0;
+          
+    }
+
+    .tooltip
+{
+    font-size: 10px;
+    margin-left: -80px;
+    margin-bottom: 20px;
+}
+
+ .btn .tooltip 
+{
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+
+}
+
+.btn:hover .tooltip
+{
+visibility: visible;
+}
+
+
+
+
+</style>
+<body>
+
+    <div class="container1">
+        <div class="navigation">
+            <div class="logo">
+                <a class="big" href="index.html"><img src="logo1.png" width="50px"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a style="color: black;" href="best.html">Products</a></li>
+                    <li><a style="color: black;"href="About.html">About</a></li>
+                    <li><a style="color: black;"href="Booking.html">Booking</a></li>
+                    <li><a style="color: black;"href="Contact.html">Contact us</a></li>
+        
+                </ul>
+                <div class="icons">
+                   <a href="search.html"><img src="search.png"></a>
+                   <a href="shop.html"><img src="bag.png"></a>
+                   <a href="Login.html"><img src="user.png"></a>
+                   
+                   
+                </div>
+            </nav>
+        </div>
+
+<div class="container">
+<div class="container-time">
+<h2 class="heading">Open hours</h2>
+<h3 class="heading-days">Monday-Friday</h3>
+<p>24 hours</p>
+
+
+<h3 class="heading-days">Saturday and Sunday</h3>
+<p>9am - 9pm </p>
+
+
+<hr>
+
+<h4 class="heading-phone">Call Us: (080) 123-45-678</h4>
+</div>
+
+<div class="container-form">
+<form action="#">
+<h2 class="heading heading-yellow">Cyber Cafe Booking</h2>
+
+<div class="form-field">
+<p>Your Name</p>
+<input type="text" placeholder="Your Name">
+</div>
+<div class="form-field">
+<p>Your email</p>
+<input type="email" placeholder="Your email">
+</div>
+<div class="form-field">
+<p>Date</p>
+<input type="date">
+</div>
+<div class="form-field">
+<p>Time</p>
+<input type="time">
+</div>
+<div class="form-field">
+<p>How many people?</p>
+<select name="select" id="#">
+<option value="1">1 person</option>
+<option value="2">2 persons</option>
+<option value="3">3 persosn</option>
+<option value="4">4 persons</option>
+<option value="5">5 persons</option>
+<option value="5+">5+ persons</option>
+</select>
+</div>
+
+<div class="form-field">
+    <p>Workspace</p>
+    <select name="select" id="#">
+    <option value="1">General Computer Room</option>
+    <option value="2">Small General Computer Room</option>
+    <option value="3">White Aesthetic Single Room</option>
+    <option value="4">Lit-Up Single Room</option>
+    <option value="5">Professional Gaming Studio</option>
+    <option value="6">Mini Gaming Room</option>
+ <option value="7">Lounge Computer Room</option>
+<option value="8">Massive Library</option>
+<option value="9">Simple Work Room (Unique style)</option>
+<option value="10">Simple Work Room (No equipment)</option>
+<option value="11">Minimalistic Editing Room</option>
+<option value="12">Single Room (With supplies)</option>
+<option value="13">Single Work Room</option>
+<option value="14">Conference Room</option>
+<option value="15">Group work space</option>
+<option value="16">General study room</option>
+<option value="17">Gaming Room</option>
+<option value="18">Music Production room</option>
+    
+    </select>
+    </div>
+
+<button class="btn">Submit
+    <span class="tooltip"> Not available yet!</span>
+</button>
+</form>
+</div>
+
+
+
+</div>
+<div class="row" style="background-color: black;">
+    <div class="side1">
+        <a href="index.html"><img class="footer_logo" src="logo2.png" width="90px"></a>
+        <p class="footer_motto">  Whatever you want at the best prices you will like<br><br>
+            <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%; padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://facebook.com" target="_blank"><img src="fa.png" height="20px"></button></a>
+            <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://instagram.com" target="_blank"><img src="IG.png" height="20px"></button></a>
+            <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://twitter.com" target="_blank"><img src="twit.png" height="20px"></button></a>
+            <button class="fi" style="border: none; background-color: rgba(255, 255, 255, 0.514);border-radius: 70%;  padding-top: 7px; padding-bottom: 7px;padding-left: 9px; padding-right: 9px;"><a href="https://tiktok.com" target="_blank"><img src="tiktok.png" height="20px"></button></a>
+           
+        
+    </div>
+  
+    <div class="side2"><br><br><br><br><br><br>
+        <p class="first_col">
+            
+            Products/Services<br><br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="best.html">Best deals</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="desktops.html">Desktops</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Laptop.html">Laptops</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="assessories.html">Assessories</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="tablets.html">Tablets</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="phones.html">Phones</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Booking.html">Booking</a> <br>
+            
+           
+
+        </p>
+      
+    </div>
+
+    <div class="side1" style="margin-left: -5%;"><br><br><br><br><br><br>
+
+        <p class="first_col">
+            
+            Features<br><br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="search.html">Search</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="shop.html">Account</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="About.html">About us</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Brochure.html">Brochure</a> <br>
+           <br><br><br>
+            
+
+            
+      
+        
+    </div>
+
+    <div class="side2" style="margin-left: -18%;"><br><br><br><br><br><br>
+
+        <p class="first_col">
+            
+            Support<br><br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Email</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Whatsapp</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Social media</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html">Phone support</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html">Location</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678);  font-size: 20px; text-decoration: none;" href="Contact.html">Phones</a> <br>
+            <a style="color: rgba(255, 255, 255, 0.678); font-size: 20px; text-decoration: none;" href="Contact.html">Community</a> <br>
+
+            
+      
+        
+    </div>
+</body>
+</html>

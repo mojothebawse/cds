@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1," >
+	<title>  </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css2?family=Open Sans&display=swap' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css2?family=Monoton&display=swap' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="computer1.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <title>FORGOT | CDS</title>
+<style>
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("up.jpg"); background-position:top; background-repeat: no-repeat; background-size: cover;
+overflow: hidden;
+}
+
+.form-container {
+    display: flex;
+    height: 98vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    margin-left: 440px;
+}
+
+.form-container .form-wrap {
+    background: rgba(255, 255, 255, 0.739);
+    width: 30%;
+    height: 500px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.form-container .form-wrap h2 {
+    text-align: center;
+    margin: 0px 0px 20px;
+    font-size: 19px;
+    margin-top: 100px;
+}
+
+.form-container .form-wrap .form-box {
+    margin: 0px 0px 15px;
+}
+
+.form-container .form-wrap .form-box input[type="text"]{
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid mediumslateblue;
+    margin-top: 40px;
+    width: 100%;
+    background-color: White;
+    color: white;
+}
+
+.form-container .form-wrap .form-box input[type="email"]{
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid mediumslateblue;
+    margin-top: 40px;
+    width: 100%;
+    background-color: White;
+    color: white;
+}
+
+.form-container .form-wrap .form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-container .form-wrap .form-submit input[type="submit"] {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navigation 
+            {
+                display: flex;
+                align-items: center;
+                padding: 20px;
+            }
+
+            body 
+            {
+                font-family:'M PLUS Rounded 1c', sans-serif;
+            }
+        
+            .nav{
+                flex: 1;
+                text-align: right;
+            }
+        
+            nav ul {
+                display: inline-block;
+                list-style-type: none;
+                margin-right: 240px;
+              
+            }
+        
+            nav ul li {
+        
+             display: inline-block;
+             margin-right: 100px;
+        
+            }
+
+               nav ul li:hover
+       {
+        border-bottom: 1px solid black;
+        padding-bottom: 1px;
+       }
+        
+           
+        
+            li a{
+                text-decoration: none;
+                color: #555;
+            }
+
+            .container{
+           max-width: 1350px;
+           min-width: 1350px;
+           margin: auto;
+           margin-left: -25px;
+           padding-left: 70px;
+           padding-right: 10px;
+            }
+        
+           
+        
+            .icons {
+                margin-top: -20px;
+            }
+        
+            .icons img {
+                margin-right: 20px;
+           
+               
+               
+            }
+        
+            .icons img:hover
+            {
+                
+                -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   
+                
+                
+            }
+            a.big 
+{
+   margin-top: 30px;
+}
+
+a.big :hover
+{
+    -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   
+
+}
+</style>
+</head>	
+<body>
+    <div class = "container">
+
+        <div class="navigation">
+            <div class="logo">
+                <a class="big" href="index.html"><img src="logo1.png" width="50px"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a style="color: black;" href="best.html">Products</a></li>
+                    <li><a style="color: black;"href="About.html">About</a></li>
+                    <li><a style="color: black;"href="Booking.html">Booking</a></li>
+                    <li><a style="color: black;"href="Contact.html">Contact us</a></li>
+        
+                </ul>
+                <div class="icons">
+                   <a href="search.html"><img src="search.png"></a>
+                   <a href="shop.html"><img src="bag.png"></a>
+                   <a href="Login.html"><img src="user.png"></a>
+                   
+                   
+                </div>
+            </nav>
+        </div><br><br><br>
+<div class="form-container">
+    <form action="#" method="POST" class="form-wrap">
+        <h2>Forgot Password?</h2>
+        <div class="form-box">
+            <input type="text" placeholder="Enter Name" />
+        </div>
+        <div class="form-box">
+            <input type="email" placeholder="Enter Email " />
+        </div><br><br>
+        <div class="form-submit">
+            <input type="submit" value="Recover Password" />
+        </div>
+    </form>
+</div>
+
+</body>
+</html>	

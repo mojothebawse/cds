@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /**
+ * Quick and easy CSS3 rolling-number/slot machine?
+ */
+ body {
+ 	font-size: 700%; /* with this setup you get 1:1 em , so 1em is actually number 1 */
+ }
+
+ #counter {
+    height: 1em;
+    overflow: hidden;
+}
+
+.digits {
+    float:left;
+    list-style-type: none;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.digits-first {
+    margin-top: -4em; /* number 4! */
+}
+
+.digits-second {
+    margin-top: 0em; /* number 0! */
+}
+
+.digits-third {
+    margin-top: -1em; /* number 4! */
+}
+
+.digits {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  
+}
+
+.luckie {
+    animation-name: luckie;
+}
+
+/* Animations */
+@keyframes luckie {
+    100% {
+        margin-top: -8em;
+    }
+} 
+</style>
+<body>
+    <div id="counter" class="animated">
+               
+        <ul class="digits digits-third luckie"> <li> 0 <li> 1 <li> 2 <li> 3 <li> 4 <li> 5 <li> 6 <li> 7 <li> 8 <li> 9 </ul>
+    </div> 
+</body>
+</html>
